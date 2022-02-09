@@ -1,0 +1,1 @@
+Sqrt of 2 = 1.4142135623731 and square of sqrt2 is 2
