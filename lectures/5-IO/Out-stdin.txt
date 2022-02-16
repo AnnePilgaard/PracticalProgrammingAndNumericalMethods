@@ -1,0 +1,7 @@
+This goes to stdout
+another stdout
+Line = 12 13
+word = 12
+x=12
+word = 13
+x=13
