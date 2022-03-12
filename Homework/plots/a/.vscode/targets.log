@@ -10,22 +10,30 @@ make: *** No rule to make target 'all'.  Stop.
  
 
  
-# Make data base, printed on Wed Mar  2 22:30:37 2022
+# Make data base, printed on Sat Mar 12 14:32:15 2022
+ 
 
+ 
 # Variables
 
+ 
+# environment
+ 
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
 LC_ALL = C
 # environment
+ 
 USERPROFILE = C:\Users\Anne
+ 
 # environment
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-1b5ec07d-faaf-45d8-92e7-d55796737050-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5f8b33dd-5ebb-4b77-a4e2-c9f57ec576d9-sock
 # environment
 VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +47,9 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16308_VTIFRABPNKFLTFOC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13192_UABIJKQKABYORNQX
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -48,16 +58,16 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 %D = $(patsubst %/,%,$(dir $%))
  
 # automatic
+ 
 ^D = $(patsubst %/,%,$(dir $^))
  
 # environment
- 
 VSCODE_LOG_STACK = false
- 
 # automatic
+ 
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Anne\AppData\Roaming\Code\CachedData\f80445acd5a3dadef24aa209168452a3d97cc326
+VSCODE_CODE_CACHE_PATH = C:\Users\Anne\AppData\Roaming\Code\CachedData\b5205cc8eb4fbaa726835538cd82372cc0222d43
 # environment
 LANG = C
 # default
@@ -71,20 +81,14 @@ MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
- 
 CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/plots/a
 # environment
- 
 VSCODE_PIPE_LOGGING = true
- 
 # environment
- 
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
- 
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
- 
 PROGRAMFILES = C:\Program Files
 # environment
 MFLAGS = -pqrR
@@ -103,7 +107,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 16308
+VSCODE_PID = 13192
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -134,12 +138,15 @@ WINDIR = C:\WINDOWS
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
+ 
 # environment
 PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files/nodejs:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/MATLAB/R2020a/bin:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Firefly:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/DLLs:/cygdrive/c/Program Files/PuTTY:/cygdrive/c/Program Files/dotnet:/usr/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Anne/AppData/Roaming/npm:/cygdrive/c/Users/Anne/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Anne/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/cygdrive/c/Program Files/JetBrains/PyCharm Community Edition 2020.3.2/bin:/cygdrive/c/Users/Anne/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Anne/.dotnet/tools:/cygdrive/c/Users/Anne/AppData/Local/GitHubDesktop/bin
 # environment
+ 
 COMPUTERNAME = DESKTOP-N4LUK91
 # default
 MAKEFILES := 
+ 
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -166,15 +173,13 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 USERDOMAIN = DESKTOP-N4LUK91
 # 'override' directive
 GNUMAKEFLAGS := 
- 
 # environment
 OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
 # makefile
- 
 .DEFAULT_GOAL := Out.txt
- 
 # default
- 
 MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
@@ -195,17 +200,21 @@ PROCESSOR_ARCHITECTURE = AMD64
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/Anne
 # environment
+ 
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+ 
 # environment
+ 
 ELECTRON_RUN_AS_NODE = 1
 # environment
+ 
 TEMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\1d4a0d9fdbff4237c63c26af338103da-1.64.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\1d4a0d9fdbff4237c63c26af338103da-1.65.0-main-sock
 # environment
 TERM = xterm-256color
 # default
@@ -219,22 +228,17 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
- 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
- 
 # environment
 PROCESSOR_REVISION = 3d04
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
- 
-# Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
+# Load=101/1024=10%, Rehash=0, Collisions=13/128=10%
 
 # Pattern-specific Variable Values
- 
 
 # No pattern-specific variable values.
- 
 
 # Directories
 
@@ -250,17 +254,21 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 main.exe: main.cs
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 6):
+ 
 	mcs main.cs
 
 # Not a target:
+ 
 Makefile:
+ 
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-03-02 08:16:34.6851141
 #  File has been updated.
+ 
 #  Successfully updated.
 
 # Not a target:
@@ -304,6 +312,6 @@ Out.txt: main.exe
 # strcache performance: lookups = 20 / hit rate = 40%
 # hash-table stats:
 # Load=12/8192=0%, Rehash=0, Collisions=0/20=0%
-# Finished Make data base on Wed Mar  2 22:30:37 2022
+# Finished Make data base on Sat Mar 12 14:32:15 2022
 
  
