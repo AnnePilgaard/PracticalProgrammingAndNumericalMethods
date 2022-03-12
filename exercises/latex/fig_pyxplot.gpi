@@ -1,0 +1,11 @@
+set terminal pdf
+set output "exp.pdf"
+set size 8
+set key bottom right
+set tics out
+set xlabel "$x$"
+set ylabel "$e^x$"
+set mtics 1
+plot [-3:3][]\
+"exp_real.txt" with lines title "$e^x$"\
+, "exp_approx.txt" with lines title "$\sim e^x$"
