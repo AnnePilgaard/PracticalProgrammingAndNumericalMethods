@@ -1,0 +1,13 @@
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/lectures/10-Matlib'
+ 
+mcs -target:library -out:./matlib.dll integrate.cs
+mcs -t:exe -r:matlib.dll main.cs
+mono main.exe 1> Out.txt 2>erf.data.txt
+#python3 test.py >> Out.txt
+cat Out.txt
+cat erf.data.txt
+ 
+pyxplot fig.erf.gpi
+ 
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/lectures/10-Matlib'
+ 
