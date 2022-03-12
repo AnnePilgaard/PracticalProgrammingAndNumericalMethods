@@ -1,0 +1,12 @@
+set terminal pdf
+set output "log_gamma_pyx.pdf"
+set size 6
+set key bottom right
+set tics out
+set xlabel "$x$"
+set ylabel "$y$"
+set mtics 1
+set grid
+plot [][-5:5]\
+ "out_log_gamma.txt" with lines title "$Log(\Gamma(x))$"\
+,"tab_log_gamma.txt" with points title "tab"
