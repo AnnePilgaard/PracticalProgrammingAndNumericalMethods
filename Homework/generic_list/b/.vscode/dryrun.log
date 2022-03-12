@@ -1,0 +1,10 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/generic_list/b'
+mcs -target:library -out:genlist.dll genlist.cs
+ 
+mcs -target:exe -out:main.exe -reference:genlist.dll main.cs
+echo 1 2 3 4 5 > input.txt
+mono main.exe < input.txt > out.txt
+cat Out.txt
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/generic_list/b'
+ 

@@ -1,0 +1,8 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/epsilon'
+ 
+mcs main.cs
+mono main.exe > Out.txt
+cat Out.txt
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/epsilon'
+ 

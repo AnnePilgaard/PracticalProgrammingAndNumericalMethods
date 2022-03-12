@@ -2,17 +2,19 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 make: *** No rule to make target 'all'.  Stop.
  
 # GNU Make 4.3
+ 
 # Built for x86_64-pc-cygwin
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Mar  1 23:14:34 2022
+ 
+# Make data base, printed on Fri Mar  4 13:13:05 2022
 
 # Variables
- 
 
 # environment
 SYSTEMDRIVE = C:
@@ -25,9 +27,9 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ee70fb05-bc63-4f8c-a7de-13d330f1c89d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-60e3f8c9-5782-4a28-8c82-40606c36ded6-sock
 # environment
-VSCODE_CWD = C:\Git\PracticalProgrammingAndNumericalMethods\exercises\math
+VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
@@ -39,7 +41,7 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6304_YSXTSKUDIMYPDWRB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17180_CWCGFGZHQOAAGKEE
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -62,13 +64,12 @@ LANG = C
 TMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
 # default
 .INCLUDE_DIRS = /usr/include /usr/include
- 
 # makefile
 MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/math
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/multiprocessing
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -82,7 +83,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Git\PracticalProgrammingAndNumericalMethods\exercises\math
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\exercises\multiprocessing
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -91,11 +92,10 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
- 
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6304
+VSCODE_PID = 17180
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -161,7 +161,7 @@ GNUMAKEFLAGS :=
 # environment
 OS = Windows_NT
 # makefile
-.DEFAULT_GOAL := Out.txt
+.DEFAULT_GOAL := out.txt
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -182,7 +182,6 @@ HOMEDRIVE = C:
 PROCESSOR_ARCHITECTURE = AMD64
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
- 
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
@@ -214,7 +213,6 @@ PROCESSOR_REVISION = 3d04
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
- 
 # Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
 
 # Pattern-specific Variable Values
@@ -223,9 +221,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Directories
 
-# . (device 2882382797, inode 43065671436734280): 8 files, no impossibilities.
+# . (device 2882382797, inode 18577348462976172): 7 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -237,15 +235,30 @@ main.exe: main.cs
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
+#  recipe to execute (from 'Makefile', line 6):
 	mcs main.cs
+
+out.txt: main.exe
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	mono main.exe 1 8 > out.txt
+	cat out.txt
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 10:16:45.485134
+#  Last modified 2022-03-02 22:38:37.7518517
 #  File has been updated.
 #  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	rm main.exe out.txt
 
 # Not a target:
 .DEFAULT:
@@ -266,28 +279,20 @@ main.cs:
 #  Modification time never checked.
 #  File has not been updated.
 
-Out.txt: main.exe
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	mono main.exe > Out.txt
-
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/20=0%
- 
+# Load=8/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 92 B / avg = 7 B
-# current buf: size = 8162 B / used = 92 B / count = 12 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 12 / storage = 89 B / avg = 7 B
+# current buf: size = 8162 B / used = 89 B / count = 12 / avg = 7 B
 
-# strcache performance: lookups = 22 / hit rate = 45%
+# strcache performance: lookups = 23 / hit rate = 47%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Tue Mar  1 23:14:34 2022
+# Load=12/8192=0%, Rehash=0, Collisions=0/23=0%
+# Finished Make data base on Fri Mar  4 13:13:05 2022
 
  

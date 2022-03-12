@@ -1,0 +1,3 @@
+2.71785714285714
+The sum of 1/i from 1 to 8 is being calculated using 1 threads
+The final results is: 2.71785714285714 and should be 2.71785714285714

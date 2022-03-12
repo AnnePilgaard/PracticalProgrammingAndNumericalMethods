@@ -9,37 +9,57 @@ make: *** No rule to make target 'all'.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Mar  1 23:14:34 2022
+ 
+# Make data base, printed on Wed Mar  2 18:03:38 2022
+ 
 
+ 
 # Variables
  
 
+ 
 # environment
+ 
 SYSTEMDRIVE = C:
+ 
 # environment
+ 
 LC_ALL = C
+ 
 # environment
+ 
 USERPROFILE = C:\Users\Anne
+ 
 # environment
+ 
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
+ 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ee70fb05-bc63-4f8c-a7de-13d330f1c89d-sock
+ 
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9e5c1d9f-5a04-4ab1-a54a-3cf8f62f7061-sock
+ 
 # environment
-VSCODE_CWD = C:\Git\PracticalProgrammingAndNumericalMethods\exercises\math
+ 
+VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
+ 
 # environment
+ 
 SYSTEMROOT = C:\WINDOWS
+ 
 # environment
+ 
 PROCESSOR_LEVEL = 6
 # environment
+ 
 PSMODULEPATH = C:\Users\Anne\Documents\WindowsPowerShell\Modules;C:\Users\Anne\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
 # default
 MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6304_YSXTSKUDIMYPDWRB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2392_PPWDEOUNDXGWLZRW
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -62,13 +82,12 @@ LANG = C
 TMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
 # default
 .INCLUDE_DIRS = /usr/include /usr/include
- 
 # makefile
 MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/math
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/generic_list/b
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -82,7 +101,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Git\PracticalProgrammingAndNumericalMethods\exercises\math
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\generic_list\b
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -90,12 +109,14 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # automatic
+ 
 @F = $(notdir $@)
  
 # environment
 VSCODE_VERBOSE_LOGGING = true
+ 
 # environment
-VSCODE_PID = 6304
+VSCODE_PID = 2392
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -166,13 +187,20 @@ OS = Windows_NT
 MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
+ 
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-N4LUK91
+ 
 # environment
+ 
 NUMBER_OF_PROCESSORS = 4
+ 
 # environment
+ 
 PUBLIC = C:\Users\Public
+ 
 # environment
+ 
 MOZ_PLUGIN_PATH = C:\PROGRAM FILES (X86)\FOXIT SOFTWARE\FOXIT READER\plugins\
 # environment
 APPDATA = C:\Users\Anne\AppData\Roaming
@@ -182,7 +210,6 @@ HOMEDRIVE = C:
 PROCESSOR_ARCHITECTURE = AMD64
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
- 
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
@@ -214,7 +241,6 @@ PROCESSOR_REVISION = 3d04
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
- 
 # Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
 
 # Pattern-specific Variable Values
@@ -223,29 +249,55 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Directories
 
-# . (device 2882382797, inode 43065671436734280): 8 files, no impossibilities.
+# . (device 2882382797, inode 4785074605168975): 10 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
+ 
 
+ 
 # Implicit Rules
+ 
 
+ 
 # No implicit rules.
 
 # Files
 
-main.exe: main.cs
+main.exe: main.cs genlist.dll
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	mcs main.cs
+#  recipe to execute (from 'Makefile', line 6):
+	mcs -target:exe -out:main.exe -reference:genlist.dll main.cs
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 10:16:45.485134
+#  Last modified 2022-03-02 11:39:34.2024203
 #  File has been updated.
 #  Successfully updated.
+
+input.txt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 12):
+	echo 1 2 3 4 5 > input.txt
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 15):
+	rm input.txt main.exe out.txt
+ 
+
+ 
+# Not a target:
+genlist.cs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -266,28 +318,39 @@ main.cs:
 #  Modification time never checked.
 #  File has not been updated.
 
-Out.txt: main.exe
+Out.txt: main.exe input.txt
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	mono main.exe > Out.txt
+	mono main.exe < input.txt > out.txt
+	cat Out.txt
+
+genlist.dll: genlist.cs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	mcs -target:library -out:genlist.dll genlist.cs
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/20=0%
- 
+# Load=11/1024=1%, Rehash=0, Collisions=0/29=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 92 B / avg = 7 B
-# current buf: size = 8162 B / used = 92 B / count = 12 / avg = 7 B
+ 
+# strcache buffers: 1 (0) / strings = 16 / storage = 130 B / avg = 8 B
+ 
+# current buf: size = 8162 B / used = 130 B / count = 16 / avg = 8 B
+ 
 
-# strcache performance: lookups = 22 / hit rate = 45%
+ 
+# strcache performance: lookups = 33 / hit rate = 51%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Tue Mar  1 23:14:34 2022
+# Load=16/8192=0%, Rehash=0, Collisions=0/33=0%
+# Finished Make data base on Wed Mar  2 18:03:38 2022
 
  

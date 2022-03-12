@@ -1,4 +1,6 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/math'
+mcs main.cs
+mono main.exe > Out.txt
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/math'
  

@@ -1,0 +1,13 @@
+using System;
+using static System.Console;
+class main{
+    public static void Main(){
+        genlist<int> list = new genlist<int>();
+        list.push(1);
+        list.push(5);
+        list.push(7);
+        for(int i=0;i<list.data.Length;i++){
+            WriteLine($"item number {i} is {list.data[i]}");
+        }
+    }
+}

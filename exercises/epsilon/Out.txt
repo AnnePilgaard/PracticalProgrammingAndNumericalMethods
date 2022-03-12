@@ -1,0 +1,19 @@
+---1---
+my max int is 2147483647
+the system max in is 2147483647
+They are the same
+my min int is -2147483648
+the system min in is -2147483648
+They are the same
+---2---
+my double machine epsilon is 2.22044604925031E-16 
+The system double machine epsilon should be 2.22044604925031E-16 
+my float machine epsilon is 1.192093E-07 
+The system float machine epsilon should be 1.19209289550781E-07 
+---3---
+1.11022302462516E-16
+sumA-1 = 0.000000e+000 should be 1.110223e-010
+sumB-1 = 1.110223e-010 should be 1.110223e-010
+---4---
+a = 2E-16 and b = 3E-16 are approximately equal: approx(a,b) = True 
+while c = 2E-16 and d = 1 are not approximately equal: approx(c,d) = False 

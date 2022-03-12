@@ -9,7 +9,7 @@ make: *** No rule to make target 'all'.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Mar  1 23:14:34 2022
+# Make data base, printed on Wed Mar  2 18:25:03 2022
 
 # Variables
  
@@ -25,9 +25,9 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ee70fb05-bc63-4f8c-a7de-13d330f1c89d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dd53a329-d94e-41ad-a9c7-ed4c57647e5c-sock
 # environment
-VSCODE_CWD = C:\Git\PracticalProgrammingAndNumericalMethods\exercises\math
+VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
@@ -39,7 +39,7 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6304_YSXTSKUDIMYPDWRB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2392_PPWDEOUNDXGWLZRW
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -62,13 +62,12 @@ LANG = C
 TMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
 # default
 .INCLUDE_DIRS = /usr/include /usr/include
- 
 # makefile
 MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/math
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/pass_functions
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -82,7 +81,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Git\PracticalProgrammingAndNumericalMethods\exercises\math
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\exercises\pass_functions
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -91,11 +90,10 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
- 
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6304
+VSCODE_PID = 2392
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -119,15 +117,25 @@ MAKECMDGOALS := all
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
+ 
 COMSPEC = C:\WINDOWS\system32\cmd.exe
+ 
 # environment
+ 
 WINDIR = C:\WINDOWS
+ 
 # environment
+ 
 MAKELEVEL := 0
+ 
 # default
+ 
 MAKE = $(MAKE_COMMAND)
+ 
 # environment
-PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files/nodejs:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/MATLAB/R2020a/bin:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Firefly:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/DLLs:/cygdrive/c/Program Files/PuTTY:/cygdrive/c/Program Files/dotnet:/usr/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Anne/AppData/Roaming/npm:/cygdrive/c/Users/Anne/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Anne/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/cygdrive/c/Program Files/JetBrains/PyCharm Community Edition 2020.3.2/bin:/cygdrive/c/Users/Anne/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Anne/.dotnet/tools:/cygdrive/c/Users/Anne/AppData/Local/GitHubDesktop/bin
+ 
+PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files/nodejs:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/MATLAB/R2020a/bin:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Firefly:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/DLLs:/cygdrive/c/Program Files/PuTTY:/cygdrive/c/Program Files/dotnet:/usr/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Anne/AppData/Roaming/npm:/cygdrive/c/Users/Anne/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Anne/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/cygdrive/c/Program Files/JetBrains/PyCharm Communi 
+ty Edition 2020.3.2/bin:/cygdrive/c/Users/Anne/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Anne/.dotnet/tools:/cygdrive/c/Users/Anne/AppData/Local/GitHubDesktop/bin
 # environment
 COMPUTERNAME = DESKTOP-N4LUK91
 # default
@@ -140,6 +148,7 @@ PROMPT = $P$G
 LOGONSERVER = \\DESKTOP-N4LUK91
 # environment
 VSCODE_LOG_NATIVE = false
+ 
 # environment
 USERNAME = Anne
 # environment
@@ -182,18 +191,24 @@ HOMEDRIVE = C:
 PROCESSOR_ARCHITECTURE = AMD64
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
- 
 # environment
+ 
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
 HOME = /home/Anne
+ 
 # environment
+ 
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
 ELECTRON_RUN_AS_NODE = 1
+ 
 # environment
+ 
 TEMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
+ 
 # environment
+ 
 VSCODE_IPC_HOOK = \\.\pipe\1d4a0d9fdbff4237c63c26af338103da-1.64.2-main-sock
 # environment
 TERM = xterm-256color
@@ -214,7 +229,6 @@ PROCESSOR_REVISION = 3d04
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
- 
 # Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
 
 # Pattern-specific Variable Values
@@ -223,9 +237,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Directories
 
-# . (device 2882382797, inode 43065671436734280): 8 files, no impossibilities.
+# . (device 2882382797, inode 39406496739548637): 10 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -233,19 +247,32 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Files
 
-main.exe: main.cs
+main.exe: main.cs table.dll
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	mcs main.cs
+#  recipe to execute (from 'Makefile', line 6):
+	mcs -target:exe -out:main.exe -reference:table.dll main.cs
+
+# Not a target:
+table.cs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 10:16:45.485134
+#  Last modified 2022-03-02 11:13:16.2339785
 #  File has been updated.
 #  Successfully updated.
+
+table.dll: table.cs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	mcs -target:library -out:table.dll table.cs
 
 # Not a target:
 .DEFAULT:
@@ -272,22 +299,22 @@ Out.txt: main.exe
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
 	mono main.exe > Out.txt
+	cat Out.txt
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/20=0%
- 
+# Load=9/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 92 B / avg = 7 B
-# current buf: size = 8162 B / used = 92 B / count = 12 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 14 / storage = 110 B / avg = 7 B
+# current buf: size = 8162 B / used = 110 B / count = 14 / avg = 7 B
 
-# strcache performance: lookups = 22 / hit rate = 45%
+# strcache performance: lookups = 28 / hit rate = 50%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Tue Mar  1 23:14:34 2022
+# Load=14/8192=0%, Rehash=0, Collisions=0/28=0%
+# Finished Make data base on Wed Mar  2 18:25:04 2022
 
  

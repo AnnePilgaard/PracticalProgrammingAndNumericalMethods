@@ -1,0 +1,10 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/pass_functions'
+mcs -target:library -out:table.dll table.cs
+ 
+mcs -target:exe -out:main.exe -reference:table.dll main.cs
+mono main.exe > Out.txt
+cat Out.txt
+ 
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/pass_functions'
+ 
