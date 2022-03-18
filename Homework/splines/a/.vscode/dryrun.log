@@ -1,0 +1,10 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/a'
+mcs -target:library -out:linearSpline.dll linearSpline.cs
+ 
+mcs -target:exe -out:main.exe -reference:linearSpline.dll main.cs
+mono main.exe "spline" > out.txt
+cat out.txt
+pyxplot linearSpline.gpi
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/a'
+ 

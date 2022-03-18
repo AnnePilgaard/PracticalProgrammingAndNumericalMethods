@@ -1,0 +1,10 @@
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/latex'
+mcs main.cs
+ 
+mono main.exe "approx" > exp_approx.txt
+mono main.exe "real" > exp_real.txt
+pyxplot fig_pyxplot.gpi
+pdflatex ms.tex
+pdflatex ms.tex
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/exercises/latex'
+ 
