@@ -1,6 +1,7 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
+make: *** No rule to make target 'linearSpline.gpi', needed by 'linSpline.pdf'.  Stop.
  
+# GNU Make 4.3
 # Built for x86_64-pc-cygwin
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -8,10 +9,10 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Mar 21 08:35:47 2022
+ 
+# Make data base, printed on Mon Mar 21 08:38:11 2022
 
 # Variables
- 
 
 # environment
 SYSTEMDRIVE = C:
@@ -24,7 +25,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-fa3b7cf4-1b5e-48f9-9edc-31867c8ce84e-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9f90a9ca-1b6f-4975-bd48-6d78dd05271b-sock
 # environment
 VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -66,7 +67,7 @@ MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/a
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -80,7 +81,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\splines\a
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\splines\b
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -92,13 +93,16 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
+ 
 VSCODE_PID = 11272
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 *F = $(notdir $*)
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
@@ -106,19 +110,15 @@ ONEDRIVECONSUMER = C:\Users\Anne\OneDrive
 # default
 MAKE_HOST := x86_64-pc-cygwin
 # environment
- 
 PROGRAMDATA = C:\ProgramData
 # default
 SHELL := /bin/sh
 # environment
- 
 HOMEPATH = \Users\Anne
- 
 # default
 MAKECMDGOALS := all
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
- 
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
 # environment
@@ -184,12 +184,9 @@ PROCESSOR_ARCHITECTURE = AMD64
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
 # environment
- 
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
- 
 HOME = /home/Anne
- 
 # environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
@@ -208,13 +205,18 @@ TERM = xterm-256color
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
+ 
 # environment
 SESSIONNAME = Console
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+ 
 # environment
+ 
 PROCESSOR_REVISION = 3d04
 # environment
+ 
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
 # Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
@@ -225,10 +227,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Directories
 
- 
-# . (device 2882382797, inode 71213169107869828): 13 files, no impossibilities.
+# . (device 2882382797, inode 8725724278803616): 6 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 6 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -238,48 +239,43 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Not a target:
 linearSpline.cs:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-18 11:32:51.9608282
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 main.exe: main.cs input.txt linearSpline.dll
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-18 11:35:09.7243338
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
 	mcs -target:exe -out:main.exe -reference:linearSpline.dll main.cs
 
 out.txt: main.exe
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-18 11:35:09.8327124
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 7):
 	mono $< "spline" > $@
 
 # Not a target:
 linearSpline.gpi:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-18 11:34:48.2570873
-#  File has been updated.
-#  Successfully updated.
+#  File does not exist.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-03-18 11:20:41.6569699
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 input.txt:
- 
-#  Implicit rule search has been done.
-#  Last modified 2022-03-18 11:34:15.5641455
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 clean:
 #  Implicit rule search has not been done.
@@ -290,17 +286,15 @@ clean:
 
 linearSpline.dll: linearSpline.cs
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-18 11:33:29.5572496
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
 	mcs -target:library -out:linearSpline.dll linearSpline.cs
 
 out_integ.txt: main.exe
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-18 11:35:10.5325954
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 10):
 	mono $< "integ_spline" > $@
 	cat out_integ.txt	
@@ -315,24 +309,18 @@ all: linSpline.pdf out_integ.txt
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
- 
-#  File has been updated.
- 
-#  Successfully updated.
+#  File has not been updated.
 
- 
 # Not a target:
 main.cs:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-18 11:35:06.2936506
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 linSpline.pdf: linearSpline.gpi input.txt out.txt
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-18 11:35:10.4526608
-#  File has been updated.
-#  Successfully updated.
+#  File does not exist.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 4):
 	pyxplot $<
 
@@ -347,9 +335,10 @@ linSpline.pdf: linearSpline.gpi input.txt out.txt
 # strcache buffers: 1 (0) / strings = 18 / storage = 177 B / avg = 9 B
 # current buf: size = 8162 B / used = 177 B / count = 18 / avg = 9 B
 
-# strcache performance: lookups = 46 / hit rate = 60%
+# strcache performance: lookups = 39 / hit rate = 53%
+ 
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/46=0%
-# Finished Make data base on Mon Mar 21 08:35:47 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/39=0%
+# Finished Make data base on Mon Mar 21 08:38:12 2022
 
  

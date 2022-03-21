@@ -1,0 +1,8 @@
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b'
+ 
+make: *** No rule to make target 'linearSpline.gpi', needed by 'linSpline.pdf'.
+make: *** No rule to make target 'input.txt', needed by 'linSpline.pdf'.
+ 
+mcs -target:library -out:linearSpline.dll linearSpline.cs
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b'
+ 

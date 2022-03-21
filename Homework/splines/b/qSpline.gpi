@@ -1,0 +1,10 @@
+set terminal pdf
+set output "qSpline.pdf"
+set size 6
+set key top left
+set tics out
+set xlabel "$x$"
+set ylabel "$y$"
+set grid
+plot [0:10][0:8]\
+ "input1.txt" with points title "Data"
