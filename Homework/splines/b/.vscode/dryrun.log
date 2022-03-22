@@ -1,8 +1,8 @@
+make.exe --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b'
+pyxplot qSpline.gpi
  
-make: *** No rule to make target 'linearSpline.gpi', needed by 'linSpline.pdf'.
-make: *** No rule to make target 'input.txt', needed by 'linSpline.pdf'.
- 
-mcs -target:library -out:linearSpline.dll linearSpline.cs
+mcs -target:library -out:qSpline.dll qSpline.cs
+mcs -target:exe -out:main.exe -reference:qSpline.dll main.cs
 make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b'
  

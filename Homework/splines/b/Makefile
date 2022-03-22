@@ -1,7 +1,11 @@
-all: qSpline.pdf main.exe
+all: qSpline.pdf main.exe out.txt
 
-qSpline.pdf: qSpline.gpi input1.txt 
+qSpline.pdf: qSpline.gpi input1.txt qspline1.txt qsplineDer.txt
 	pyxplot $<
+
+out.txt qspline1.txt qsplineDer.txt: main.exe
+	mono $<  > out.txt
+	cat out.txt	
 
 main.exe: main.cs input1.txt qSpline.dll
 	mcs -target:exe -out:main.exe -reference:qSpline.dll main.cs

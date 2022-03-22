@@ -1,7 +1,6 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'linearSpline.gpi', needed by 'linSpline.pdf'.  Stop.
- 
 # GNU Make 4.3
+ 
 # Built for x86_64-pc-cygwin
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -9,10 +8,10 @@ make: *** No rule to make target 'linearSpline.gpi', needed by 'linSpline.pdf'. 
 # There is NO WARRANTY, to the extent permitted by law.
  
 
- 
-# Make data base, printed on Mon Mar 21 08:38:11 2022
+# Make data base, printed on Tue Mar 22 20:48:25 2022
 
 # Variables
+ 
 
 # environment
 SYSTEMDRIVE = C:
@@ -25,7 +24,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9f90a9ca-1b6f-4975-bd48-6d78dd05271b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-47eb32da-5321-47b4-91ab-61450c791573-sock
 # environment
 VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +38,7 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11272_LYSHBMFHOMOWDXHF
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7748_JRTCKEIBLOFQGSQV
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -93,16 +92,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
- 
-VSCODE_PID = 11272
+VSCODE_PID = 7748
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 *F = $(notdir $*)
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
- 
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
@@ -130,6 +126,7 @@ MAKE = $(MAKE_COMMAND)
 # environment
 PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files/nodejs:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/MATLAB/R2020a/bin:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Firefly:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/DLLs:/cygdrive/c/Program Files/PuTTY:/cygdrive/c/Program Files/dotnet:/usr/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Anne/AppData/Roaming/npm:/cygdrive/c/Users/Anne/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Anne/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/cygdrive/c/Program Files/JetBrains/PyCharm Community Edition 2020.3.2/bin:/cygdrive/c/Users/Anne/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Anne/.dotnet/tools:/cygdrive/c/Users/Anne/AppData/Local/GitHubDesktop/bin
 # environment
+ 
 COMPUTERNAME = DESKTOP-N4LUK91
 # default
 MAKEFILES := 
@@ -205,31 +202,27 @@ TERM = xterm-256color
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
- 
 # environment
 SESSIONNAME = Console
 # default
- 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
- 
 # environment
- 
 PROCESSOR_REVISION = 3d04
 # environment
- 
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
+# Load=98/1024=10%, Rehash=0, Collisions=12/128=9%
 
 # Pattern-specific Variable Values
 
+ 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 2882382797, inode 8725724278803616): 6 files, no impossibilities.
+# . (device 2882382797, inode 8725724278803616): 10 files, no impossibilities.
 
-# 6 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -237,67 +230,44 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Files
 
-# Not a target:
-linearSpline.cs:
+main.exe: main.cs input1.txt qSpline.dll
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-main.exe: main.cs input.txt linearSpline.dll
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
-	mcs -target:exe -out:main.exe -reference:linearSpline.dll main.cs
-
-out.txt: main.exe
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 7):
-	mono $< "spline" > $@
-
-# Not a target:
-linearSpline.gpi:
-#  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 7):
+	mcs -target:exe -out:main.exe -reference:qSpline.dll main.cs
 
 # Not a target:
-Makefile:
+input1.txt:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-03-18 11:20:41.6569699
+#  Last modified 2022-03-21 08:49:11.1130167
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-input.txt:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-21 12:44:23.8901223
+#  File has been updated.
+#  Successfully updated.
+
+qSpline.pdf: qSpline.gpi input1.txt
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-03-21 08:54:58.5810837
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 4):
+	pyxplot $<
 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
+#  recipe to execute (from 'Makefile', line 13):
 	rm main.exe 
-
-linearSpline.dll: linearSpline.cs
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
-	mcs -target:library -out:linearSpline.dll linearSpline.cs
-
-out_integ.txt: main.exe
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 10):
-	mono $< "integ_spline" > $@
-	cat out_integ.txt	
 
 # Not a target:
 .DEFAULT:
@@ -305,40 +275,84 @@ out_integ.txt: main.exe
 #  Modification time never checked.
 #  File has not been updated.
 
-all: linSpline.pdf out_integ.txt
+all: qSpline.pdf main.exe
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 # Not a target:
 main.cs:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-21 12:44:25.0819871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+qSpline.gpi:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-21 08:54:43.1177363
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-linSpline.pdf: linearSpline.gpi input.txt out.txt
+qSpline.dll: qSpline.cs
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
-	pyxplot $<
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-03-21 12:44:28.3572138
+#  File has been updated.
+#  Needs to be updated (-q is set).
+ 
+# automatic
+# @ := qSpline.dll
+# automatic
+# * := 
+# automatic
+# < := qSpline.cs
+# automatic
+# + := qSpline.cs
+# automatic
+# % := 
+# automatic
+# ^ := qSpline.cs
+# automatic
+# ? := qSpline.cs
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 10):
+	mcs -target:library -out:qSpline.dll qSpline.cs
+
+# Not a target:
+qSpline.cs:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-21 12:44:58.5128132
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/41=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/35=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 177 B / avg = 9 B
-# current buf: size = 8162 B / used = 177 B / count = 18 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 139 B / avg = 8 B
+# current buf: size = 8162 B / used = 139 B / count = 16 / avg = 8 B
 
-# strcache performance: lookups = 39 / hit rate = 53%
- 
+# strcache performance: lookups = 37 / hit rate = 56%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/39=0%
-# Finished Make data base on Mon Mar 21 08:38:12 2022
+# Load=16/8192=0%, Rehash=0, Collisions=0/37=0%
+# Finished Make data base on Tue Mar 22 20:48:25 2022
 
  

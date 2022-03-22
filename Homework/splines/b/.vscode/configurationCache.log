@@ -1,1 +1,1 @@
-{"buildTargets":["all","clean","linSpline.pdf","linearSpline.dll","main.exe","out.txt","out_integ.txt"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["all","clean","main.exe","qSpline.dll","qSpline.pdf"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
