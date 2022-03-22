@@ -1,0 +1,13 @@
+imaginary i = 0+1i
+
+exp(I)         =0.54+0.841i
+cos(1)+i sin(1)=0.54+0.841i
+
+ln(exp(I))=0+1i
+
+exp(I*PI)=-1+1.22e-16i
+
+log(I)=0+1.57i
+
+I^I          =0.208+0i
+exp(I*log(I))=0.208+0i

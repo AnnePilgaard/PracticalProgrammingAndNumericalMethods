@@ -1,9 +1,17 @@
+CSC = mcs
+RUN = mono
+
+all: Out.txt
+	cat Out.txt
+
 Out.txt: main.exe
-	mono main.exe > Out.txt
+	$(RUN) main.exe > Out.txt
 
 main.exe: main.cs cmath.dll
-	mcs -reference:cmath.dll main.cs
+	$(CSC) -t:exe -out:$@ $(addprefix -r:,$(filter %.dll,$^)) $<
 
-cmath.dll : cmath.cs complex.cs
-	mcs -target:library -out:cmath.dll $^
+cmath.dll: complex.cs cmath.cs
+	$(CSC) -t:library -out:./$@ $^
 
+clean:
+	$(RM) *.exe *.dll [Oo]ut*.txt
