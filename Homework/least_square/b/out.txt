@@ -1,1 +1,3 @@
-The half life of ThX from the fit is 4.22+/- 0.02 days, while the half-life of 224Ra from Google is 3.6 days, so the fit does not agree with the modern value. 
+0.0194235132199503
+Decay constant from fit: 0.16 +/- 0.02 [1/days]
+The half life of ThX from the fit is 4.22+/- 0.5 days, while the half-life of 224Ra from Google is 3.6 days, so the fit value with error is not within the modern value. 

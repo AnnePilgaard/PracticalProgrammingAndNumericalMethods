@@ -137,11 +137,10 @@ public static class main{
         }
 
         double half_life = Log(2)/Abs(c1);
-        double half_life_ush = (Log(2) / ( Abs(c1)*Abs(c1))*Sqrt(S[1,1]) );
-        WriteLine(Sqrt(S[1,1]));
+        double half_life_ush = Sqrt(S[1,1]);
 
-        WriteLine($"Decay constant from fit: {Round(Abs(c1),2)} +/- {Round(Sqrt(S[1,1]),2)} [1/days]");
-        WriteLine($"The half life of ThX from the fit is {Round(half_life, 2)}+/- {Round(half_life_ush,2)} days, while the half-life of 224Ra from Google is 3.6 days, so the fit value with error is not within the modern value. ");
+    
+        WriteLine($"The half life of ThX from the fit is {Round(half_life, 2)}+/- {Round(half_life_ush,2)} days, while the half-life of 224Ra from Google is 3.6 days, so the fit does not agree with the modern value. ");
         
 
     }
