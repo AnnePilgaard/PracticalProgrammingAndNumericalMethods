@@ -1,0 +1,5 @@
+4.86745463527251
+-0.164446633495626
+
+
+The half life of ThX from the fit is 4.21502809650635 days, while the half-life of 224Ra from Google is 3.6 days

@@ -9,7 +9,7 @@ make: *** No rule to make target 'all'.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Mar 22 09:43:13 2022
+# Make data base, printed on Tue Mar 22 09:44:35 2022
 
 # Variables
 
@@ -24,7 +24,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-692fa02f-30d6-4ba6-b091-08e243cf0446-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5cccc37f-fcde-487d-a207-dc1aaf1e8117-sock
 # environment
 VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -32,19 +32,16 @@ SYSTEMROOT = C:\WINDOWS
 # environment
 PROCESSOR_LEVEL = 6
 # environment
- 
 PSMODULEPATH = C:\Users\Anne\Documents\WindowsPowerShell\Modules;C:\Users\Anne\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
 # default
- 
 MAKE_COMMAND := make
- 
 # automatic
- 
 @D = $(patsubst %/,%,$(dir $@))
+ 
 # environment
+ 
 CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7748_JRTCKEIBLOFQGSQV
 # environment
- 
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
@@ -71,7 +68,7 @@ MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/linear_equations/b
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/least_square/a
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -85,7 +82,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\linear_equations\b
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\least_square\a
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -103,14 +100,13 @@ VSCODE_PID = 7748
 # automatic
 *F = $(notdir $*)
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
- 
 # environment
- 
 ONEDRIVECONSUMER = C:\Users\Anne\OneDrive
- 
 # default
 MAKE_HOST := x86_64-pc-cygwin
 # environment
@@ -155,10 +151,13 @@ COMMONPROGRAMFILES = C:\Program Files\Common Files
 PROGRAMW6432 = C:\Program Files
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+ 
 # automatic
 +F = $(notdir $+)
+ 
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+ 
 # environment
 USERDOMAIN = DESKTOP-N4LUK91
 # 'override' directive
@@ -181,21 +180,20 @@ PUBLIC = C:\Users\Public
 MOZ_PLUGIN_PATH = C:\PROGRAM FILES (X86)\FOXIT SOFTWARE\FOXIT READER\plugins\
 # environment
 APPDATA = C:\Users\Anne\AppData\Roaming
- 
 # environment
 HOMEDRIVE = C:
 # environment
 PROCESSOR_ARCHITECTURE = AMD64
- 
 # environment
- 
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
- 
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+ 
 # environment
 HOME = /home/Anne
+ 
 # environment
+ 
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -220,10 +218,9 @@ SESSIONNAME = Console
 # environment
 PROCESSOR_REVISION = 3d04
 # environment
- 
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
- 
 # variable set hash-table stats:
+ 
 # Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
 
 # Pattern-specific Variable Values
@@ -232,9 +229,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Directories
 
-# . (device 2882382797, inode 12103423998640472): 13 files, no impossibilities.
+# . (device 2882382797, inode 16607023625940529): 8 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -281,13 +278,16 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 15):
+ 
 	rm main.exe 
 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 # Not a target:
@@ -330,12 +330,12 @@ matlib.dll: matrix.cs vector.cs
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 175 B / avg = 9 B
-# current buf: size = 8162 B / used = 175 B / count = 18 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 157 B / avg = 9 B
+# current buf: size = 8162 B / used = 157 B / count = 17 / avg = 9 B
 
-# strcache performance: lookups = 39 / hit rate = 53%
+# strcache performance: lookups = 34 / hit rate = 50%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=2/39=5%
-# Finished Make data base on Tue Mar 22 09:43:13 2022
+# Load=17/8192=0%, Rehash=0, Collisions=2/34=6%
+# Finished Make data base on Tue Mar 22 09:44:35 2022
 
  
