@@ -1,0 +1,11 @@
+set terminal pdf
+set output "fitPlot.pdf"
+set size 6
+set key top right
+set tics out
+set y2tics
+set xlabel "Time [days]"
+set ylabel "log(Activity [Rel. units])"
+plot [0:20][0:7]\
+ "dataLog.txt" using 1:2:3 with yerrorbars title "Data", \
+  "fitPlot.txt" with lines title "Fit"

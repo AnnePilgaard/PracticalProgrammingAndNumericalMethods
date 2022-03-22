@@ -1,0 +1,15 @@
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/least_square/b'
+pyxplot fitPlot.gpi
+ 
+mcs -target:library -out:./matlib.dll matrix.cs vector.cs
+ 
+mcs -target:library -out:QR_GramSchmidt.dll -reference:matlib.dll QR_GramSchmidt.cs
+ 
+mcs -target:exe -out:main.exe -reference:matlib.dll,QR_GramSchmidt.dll main.cs
+ 
+mono main.exe  > out.txt
+ 
+cat out.txt	
+ 
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/least_square/b'
+ 
