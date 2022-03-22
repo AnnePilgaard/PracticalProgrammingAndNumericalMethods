@@ -1,7 +1,7 @@
 all: fitPlot.pdf out.txt
 
 
-fitPlot.pdf: fitPlot.gpi dataLog.txt 
+fitPlot.pdf: fitPlot.gpi dataLog.txt out.txt fitError1.txt fitError2.txt fitError3.txt fitError4.txt
 	pyxplot $<
 
 out.txt: main.exe

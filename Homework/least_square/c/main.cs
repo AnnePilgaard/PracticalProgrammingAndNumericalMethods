@@ -137,11 +137,87 @@ public static class main{
         }
 
         double half_life = Log(2)/Abs(c1);
-        double half_life_ush = Sqrt(S[1,1]);
+        double half_life_ush = (Log(2) / ( Abs(c1)*Abs(c1))*Sqrt(S[1,1]) );
+        WriteLine(Sqrt(S[1,1]));
 
-    
-        WriteLine($"The half life of ThX from the fit is {Round(half_life, 2)}+/- {Round(half_life_ush,2)} days, while the half-life of 224Ra from Google is 3.6 days, so the fit does not agree with the modern value. ");
+        WriteLine($"Decay constant from fit: {Round(Abs(c1),2)} +/- {Round(Sqrt(S[1,1]),2)} [1/days]");
+        WriteLine($"The half life of ThX from the fit is {Round(half_life, 2)}+/- {Round(half_life_ush,2)} days, while the half-life of 224Ra from Google is 3.6 days, so the fit value with error is not within the modern value. ");
         
+        double c0_ush = Sqrt(S[0,0]);
+        double c1_ush = Sqrt(S[1,1]);
+
+
+        try
+        {
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter("fitError1.txt");
+            //Write text
+            for(double z = 0; z <= 15 ;z+=1.0/8){
+                double yfit =  (c0-c0_ush) + (c1-c1_ush)*z;
+                sw.WriteLine($"{z} {yfit}");
+            }
+            //Close the file
+            sw.Close();
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+
+        try
+        {
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter("fitError2.txt");
+            //Write text
+            for(double z = 0; z <= 15 ;z+=1.0/8){
+                double yfit =  (c0+c0_ush) + (c1+c1_ush)*z;
+                sw.WriteLine($"{z} {yfit}");
+            }
+            //Close the file
+            sw.Close();
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+
+        try
+        {
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter("fitError3.txt");
+            //Write text
+            for(double z = 0; z <= 15 ;z+=1.0/8){
+                double yfit =  (c0-c0_ush) + (c1+c1_ush)*z;
+                sw.WriteLine($"{z} {yfit}");
+            }
+            //Close the file
+            sw.Close();
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+
+        try
+        {
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter("fitError4.txt");
+            //Write text
+            for(double z = 0; z <= 15 ;z+=1.0/8){
+                double yfit =  (c0+c0_ush) + (c1-c1_ush)*z;
+                sw.WriteLine($"{z} {yfit}");
+            }
+            //Close the file
+            sw.Close();
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+
+
+
+
 
     }
 }
