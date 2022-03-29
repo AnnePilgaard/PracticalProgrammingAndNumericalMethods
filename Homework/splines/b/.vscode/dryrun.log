@@ -1,8 +1,15 @@
 make.exe --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b'
+mcs -target:library -out:qSpline.dll qSpline.cs
+ 
+mcs -target:exe -out:main.exe -reference:qSpline.dll main.cs
+mono main.exe  > out.txt
+cat out.txt	
+mono main.exe  > out.txt
+cat out.txt	
 pyxplot qSpline.gpi
  
-mcs -target:library -out:qSpline.dll qSpline.cs
-mcs -target:exe -out:main.exe -reference:qSpline.dll main.cs
+mono main.exe  > out.txt
+cat out.txt	
 make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/splines/b'
  
