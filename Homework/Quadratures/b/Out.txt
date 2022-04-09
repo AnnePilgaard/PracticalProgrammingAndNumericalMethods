@@ -1,0 +1,6 @@
+Integral of 1/Sqrt(x) from 0 to 1 should be 2, is: 1.99996150007805 and it took 4285 iterations
+Same integral now by Clenshaw–Curtis variable transformation: 1.99999201046432 and it took 7 iterations
+Integral of Log(x)/Sqrt(x) from 0 to 1 should be -4, is: -3.99991705899915 and it took 4301 iterations
+Same integral now by Clenshaw–Curtis variable transformation: -3.99987385646141 and it took 47 iterations
+Integration of of 1/Sqrt(x) from 0 to 1 in python = 1.9999999999999984 which took  231 iterations
+Integration of of Log(x)/Sqrt(x) from 0 to 1 in python = -4.000000000000085 which took  315 iterations
