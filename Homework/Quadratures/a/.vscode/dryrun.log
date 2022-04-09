@@ -1,0 +1,7 @@
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/Quadratures/a'
+mcs main.cs
+ 
+mono main.exe > Out.txt
+cat Out.txt
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/Quadratures/a'
+ 

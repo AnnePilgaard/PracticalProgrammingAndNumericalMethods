@@ -1,0 +1,4 @@
+Integral of Sqrt(x) from 0 to 1 should be 2/3, is: 0.666953909054655
+Integral of 1/Sqrt(x) from 0 to 1 should be 2, is: 1.99996150007805
+Integral of 4*Sqrt(1-x^2) from 0 to 1 should be pi, is: 3.14183457802727
+Integral of Log(x)/Sqrt(x) from 0 to 1 should be -4, is: -3.99991705899915

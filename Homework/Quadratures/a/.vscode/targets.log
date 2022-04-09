@@ -1,0 +1,299 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-cygwin
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sat Apr  9 14:35:20 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\Anne
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+LOCALAPPDATA = C:\Users\Anne\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d848a704-4d04-4404-bdc3-913f9c331424-sock
+# environment
+VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Users\Anne\Documents\WindowsPowerShell\Modules;C:\Users\Anne\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
+ 
+# default
+MAKE_COMMAND := make
+ 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+ 
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12836_RMXUVZHUYDAJNCNB
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Anne\AppData\Roaming\Code\CachedData\c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\Anne\OneDrive
+# makefile
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/Quadratures/a
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\Quadratures\a
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 12836
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\Anne\OneDrive
+# default
+MAKE_HOST := x86_64-pc-cygwin
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\Anne
+# default
+ 
+MAKECMDGOALS := all
+ 
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+ 
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files/nodejs:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/MATLAB/R2020a/bin:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Firefly:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/DLLs:/cygdrive/c/Program Files/PuTTY:/cygdrive/c/Program Files/dotnet:/usr/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Anne/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Anne/AppData/Roaming/npm:/cygdrive/c/Users/Anne/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Anne/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/cygdrive/c/Program Files/JetBrains/PyCharm Community Edition 2020.3.2/bin:/cygdrive/c/Users/Anne/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/cygdrive/c/Users/Anne/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Anne/.dotnet/tools:/cygdrive/c/Users/Anne/AppData/Local/GitHubDesktop/bin
+# environment
+COMPUTERNAME = DESKTOP-N4LUK91
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+LOGONSERVER = \\DESKTOP-N4LUK91
+ 
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = Anne
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-N4LUK91
+# 'override' directive
+ 
+GNUMAKEFLAGS := 
+# environment
+ 
+OS = Windows_NT
+# makefile
+.DEFAULT_GOAL := Out.txt
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-N4LUK91
+# environment
+NUMBER_OF_PROCESSORS = 4
+# environment
+PUBLIC = C:\Users\Public
+# environment
+MOZ_PLUGIN_PATH = C:\PROGRAM FILES (X86)\FOXIT SOFTWARE\FOXIT READER\plugins\
+# environment
+APPDATA = C:\Users\Anne\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/Anne
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\1d4a0d9fdbff4237c63c26af338103da-1.65.2-main-sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+PROCESSOR_REVISION = 3d04
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+# variable set hash-table stats:
+# Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+ 
+# . (device 2882382797, inode 16325548649290496): 5 files, no impossibilities.
+
+ 
+# 5 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+main.exe: main.cs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+	mcs main.cs
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-02 08:16:34.6851141
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+main.cs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Out.txt: main.exe
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	mono main.exe > Out.txt
+	cat Out.txt
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/20=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 11 / storage = 83 B / avg = 7 B
+# current buf: size = 8162 B / used = 83 B / count = 11 / avg = 7 B
+
+# strcache performance: lookups = 19 / hit rate = 42%
+# hash-table stats:
+# Load=11/8192=0%, Rehash=0, Collisions=0/19=0%
+# Finished Make data base on Sat Apr  9 14:35:20 2022
+
+ 

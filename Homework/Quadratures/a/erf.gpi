@@ -1,0 +1,10 @@
+\
+set terminal pdf ;\
+set output "erf.pdf" ;\
+set xlabel "$x$" ;\
+set ylabel "$y$" ;\
+set tics out ;\
+set title "error function" ;\
+set key left top ;\
+plot [-4:4] [-1:1] "erf.txt"  using 1:2 with lines title "erf($x$)",\
+"tab_error.txt" using 1:2 with points pointtype 2 title "tabulated data" \
