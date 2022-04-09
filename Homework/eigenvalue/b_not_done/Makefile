@@ -1,10 +1,13 @@
-all: out.txt fitPlot.pdf
+all: out.txt rmax_convergence.pdf npoints_convergence.pdf
 
 
-fitPlot.pdf: plot.gpi f0.txt f1.txt
+rmax_convergence.pdf: rmax_convergence.gpi rmax_convergence.txt 
 	pyxplot $<
 
-f1.txt f0.txt out.txt: main.exe
+npoints_convergence.pdf: npoints_convergence.gpi npoints_convergence.txt 
+	pyxplot $<	
+
+rmax_convergence.txt npoints_convergence.txt out.txt: main.exe
 	mono $<  > $@
 	cat out.txt	
 
@@ -16,7 +19,6 @@ matlib.dll: matrix.cs vector.cs
 
 jacobi.dll: jacobi.cs matlib.dll
 	mcs -target:library -out:jacobi.dll -reference:matlib.dll jacobi.cs
-
 
 clean:
 	rm main.exe 

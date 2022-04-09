@@ -1,17 +1,15 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-cygwin
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sat Apr  9 17:20:25 2022
+# Make data base, printed on Sat Apr  9 16:32:52 2022
 
 # Variables
- 
 
 # environment
 SYSTEMDRIVE = C:
@@ -24,7 +22,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d75a1ec0-37a4-4a0a-806d-681e9dc441d6-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a3211372-f567-4c10-9e17-2f79b3265b14-sock
 # environment
 VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -59,14 +57,17 @@ LANG = C
 .LOADED := 
 # environment
 TMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
+ 
 # default
 .INCLUDE_DIRS = /usr/include /usr/include
 # makefile
 MAKEFLAGS = pqrR
 # environment
+ 
 ONEDRIVE = C:\Users\Anne\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/eigenvalue/b_not_done
+ 
+CURDIR := /cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/Monte_Carlo/a
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -80,13 +81,12 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\eigenvalue\b_not_done
+!C: = c:\Git\PracticalProgrammingAndNumericalMethods\Homework\Monte_Carlo\a
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from 'Makefile', line 1)
- 
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
@@ -94,7 +94,6 @@ MAKEFILE_LIST := Makefile
 VSCODE_VERBOSE_LOGGING = true
 # environment
 VSCODE_PID = 12836
- 
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -115,7 +114,6 @@ SHELL := /bin/sh
 HOMEPATH = \Users\Anne
 # default
 MAKECMDGOALS := all
- 
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
@@ -146,17 +144,18 @@ USERNAME = Anne
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # automatic
 ?F = $(notdir $?)
+ 
 # environment
 PROGRAMW6432 = C:\Program Files
 # environment
+ 
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+ 
 # automatic
+ 
 +F = $(notdir $+)
- 
 # environment
- 
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
- 
 # environment
 USERDOMAIN = DESKTOP-N4LUK91
 # 'override' directive
@@ -164,7 +163,7 @@ GNUMAKEFLAGS :=
 # environment
 OS = Windows_NT
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := Out.txt
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -216,17 +215,21 @@ PROCESSOR_REVISION = 3d04
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=12/128=9%
+# Load=98/1024=10%, Rehash=0, Collisions=12/125=10%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
+ 
 # Directories
 
-# . (device 2882382797, inode 844424931495921): 17 files, no impossibilities.
+ 
+# . (device 2882382797, inode 2533274791440517): 5 files, no impossibilities.
+ 
 
-# 17 files, no impossibilities in 1 directories.
+# 5 files, no impossibilities in 1 directories.
+ 
 
 # Implicit Rules
 
@@ -234,95 +237,17 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Files
 
-main.exe: main.cs matlib.dll Amatrix.txt jacobi.dll
+main.exe: main.cs
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-29 17:52:15.7847467
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 12):
-	mcs -target:exe -out:main.exe -reference:matlib.dll,jacobi.dll main.cs
-
-out.txt: main.exe
-#  Implicit rule search has not been done.
- 
-#  Last modified 2022-03-29 17:52:15.9036339
-#  File has been updated.
-#  Successfully updated.
- 
-#  recipe to execute (from 'Makefile', line 8):
- 
-	mono $<  > $@
-	cat out.txt	
-
-# Not a target:
-matrix.cs:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-21 21:59:50.5150324
-#  File has been updated.
-#  Successfully updated.
-
-fitPlot.pdf: plot.gpi f0.txt f1.txt
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := fitPlot.pdf
-# automatic
-# * := 
-# automatic
-# < := plot.gpi
-# automatic
-# + := plot.gpi f0.txt f1.txt
-# automatic
-# % := 
-# automatic
-# ^ := plot.gpi f0.txt f1.txt
-# automatic
-# ? := plot.gpi f0.txt f1.txt
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 5):
-	pyxplot $<
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+	mcs main.cs
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-29 17:51:26.1228528
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-Amatrix.txt:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-29 13:35:41.3928045
-#  File has been updated.
-#  Successfully updated.
- 
-
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
-	rm main.exe 
-
-f1.txt: main.exe
-#  Implicit rule search has not been done.
-#  Last modified 2022-03-29 17:52:15.9106132
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 8):
-	mono $<  > $@
-	cat out.txt	
-
-# Not a target:
-plot.gpi:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-29 17:53:53.0538782
+#  Last modified 2022-03-02 08:16:34.6851141
 #  File has been updated.
 #  Successfully updated.
 
@@ -332,83 +257,41 @@ plot.gpi:
 #  Modification time never checked.
 #  File has not been updated.
 
-all: out.txt fitPlot.pdf
- 
+# Not a target:
+all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  File has not been updated.
 
 # Not a target:
 main.cs:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-29 17:52:09.0444475
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-vector.cs:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-21 13:05:40.5900054
-#  File has been updated.
-#  Successfully updated.
-
-jacobi.dll: jacobi.cs matlib.dll
-#  Implicit rule search has not been done.
-#  Last modified 2022-03-29 14:03:17.3355648
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 18):
-	mcs -target:library -out:jacobi.dll -reference:matlib.dll jacobi.cs
-
-matlib.dll: matrix.cs vector.cs
-#  Implicit rule search has not been done.
-#  Last modified 2022-03-29 14:03:16.6019934
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 15):
-	mcs -target:library -out:./$@ $^
-
-# Not a target:
-.SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-f0.txt: main.exe
+Out.txt: main.exe
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-29 17:52:15.9076128
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 8):
-	mono $<  > $@
-	cat out.txt	
-
-# Not a target:
-jacobi.cs:
-#  Implicit rule search has been done.
- 
-#  Last modified 2022-03-29 13:42:42.0540062
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	mono main.exe > Out.txt
+	cat Out.txt
 
 # files hash-table stats:
-# Load=18/1024=2%, Rehash=0, Collisions=2/51=4%
+# Load=7/1024=1%, Rehash=0, Collisions=0/20=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 197 B / avg = 8 B
-# current buf: size = 8162 B / used = 197 B / count = 23 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 11 / storage = 83 B / avg = 7 B
+# current buf: size = 8162 B / used = 83 B / count = 11 / avg = 7 B
 
-# strcache performance: lookups = 58 / hit rate = 60%
+# strcache performance: lookups = 19 / hit rate = 42%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=2/58=3%
-# Finished Make data base on Sat Apr  9 17:20:25 2022
+# Load=11/8192=0%, Rehash=0, Collisions=0/19=0%
+# Finished Make data base on Sat Apr  9 16:32:52 2022
 
  

@@ -1,0 +1,12 @@
+set terminal pdf
+set output "npoints_convergence.pdf"
+set size 10
+set key top right
+set tics out
+set xlabel "npoints"
+set ylabel "Energy [Hartree]"
+set grid
+plot [][-1:0.5]\
+ "npoints_convergence.txt" using 1:2 with points title "Energy 0", \
+ "npoints_convergence.txt" using 1:3 with points title "Energy 1", \
+ "npoints_convergence.txt" using 1:4 with points title "Energy 2"

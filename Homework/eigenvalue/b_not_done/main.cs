@@ -20,12 +20,9 @@ public static class main{
         WriteLine("\n");
 
     }
-    
 
-    static void Main(){
+    static matrix generateHamiltonian(int npoints, double rmax){
 
-        int npoints = 20;
-        double rmax = 10;
         double dr = rmax / (npoints+1);
         vector r = new vector(npoints);
         for(int i = 0; i < npoints; i++){
@@ -42,6 +39,14 @@ public static class main{
         for(int i = 0; i < npoints; i++){
             H[i,i] += -1/r[i];
         }
+        return H;
+    }
+    
+
+    static void Main(){
+
+        //Creating the hamiltonian and diagonalizing it with the Jacobi routine
+        matrix H = generateHamiltonian(20, 10);
 
         WriteLine($"Matrix H:");
         printMatrix(H);
@@ -54,43 +59,16 @@ public static class main{
 
         (D, V) = jacobi.cyclic(H2);
 
-        WriteLine($"Size of D matrix: {D.size1}, {D.size2}");
-
-        WriteLine($"npoints: {npoints}");
-
-        WriteLine($"D matrix elements along diagonal:");
-
-        for (int i = 0; i < npoints; i++){
-            WriteLine($"{matrix.get(D, i, i)}");
-        }
         
-        WriteLine($"Size of V matrix: {V.size1}, {V.size2}");
 
-        //Print the first eigenfunction
+        //Investigate the convergence with respect to rmax
         try{
-            //Pass the filepath and filename to the StreamWriter Constructor
-            StreamWriter sw = new StreamWriter("f0.txt");
-            //Write text
-            for (int i = 0; i < npoints; i++){
-                sw.WriteLine($"{r[i]} {matrix.get(D, i, 0)}");
+            StreamWriter sw = new StreamWriter("rmax_convergence.txt");
+            for (double r = 1; r < 20; r+=0.2){
+                matrix H3 = generateHamiltonian(20, r);
+                (D, V) = jacobi.cyclic(H3);
+                sw.WriteLine($"{r} {matrix.get(D, 0, 0)} {matrix.get(D, 1, 1)} {matrix.get(D, 2, 2)}");
             }
-            //Close the file
-            sw.Close();
-        }
-        catch(Exception e)
-        {
-            Console.WriteLine("Exception: " + e.Message);
-        }
-       
-        //Print the second eigenfunction
-        try{
-            //Pass the filepath and filename to the StreamWriter Constructor
-            StreamWriter sw = new StreamWriter("f1.txt");
-            //Write text
-            for (int i = 0; i < npoints; i++){
-                sw.WriteLine($"{r[i]} {matrix.get(D, i, 1)}");
-            }
-            //Close the file
             sw.Close();
         }
         catch(Exception e)
@@ -98,8 +76,29 @@ public static class main{
             Console.WriteLine("Exception: " + e.Message);
         }
 
-
         
+        //Investigate the convergence with respect to npoints
+        try{
+            StreamWriter sw = new StreamWriter("npoints_convergence.txt");
+            for (int n = 10; n < 150; n+=5){
+                matrix H3 = generateHamiltonian(n, 20);
+                (D, V) = jacobi.cyclic(H3);
+                sw.WriteLine($"{n} {matrix.get(D, 0, 0)} {matrix.get(D, 1, 1)} {matrix.get(D, 2, 2)}");
+            }
+            sw.Close();
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+        
+        
+
+        //Need to add analystical energies to convergence inversitagtions {-0.5, -0.125, -0.055}
+    
+        //Need to plot eigenfunctions
+
+
 
 
 

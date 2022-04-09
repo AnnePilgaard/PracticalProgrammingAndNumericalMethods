@@ -1,0 +1,18 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/eigenvalue/b_not_done'
+mcs -target:library -out:./matlib.dll matrix.cs vector.cs
+ 
+mcs -target:library -out:jacobi.dll -reference:matlib.dll jacobi.cs
+mcs -target:exe -out:main.exe -reference:matlib.dll,jacobi.dll main.cs
+ 
+mono main.exe  > out.txt
+cat out.txt	
+ 
+mono main.exe  > f0.txt
+cat out.txt	
+ 
+mono main.exe  > f1.txt
+cat out.txt	
+pyxplot plot.gpi
+make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/eigenvalue/b_not_done'
+ 
