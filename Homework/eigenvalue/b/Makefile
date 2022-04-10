@@ -1,5 +1,7 @@
-all: out.txt rmax_convergence.pdf npoints_convergence.pdf
+all: out.txt rmax_convergence.pdf npoints_convergence.pdf eigenfunctions.pdf 
 
+eigenfunctions.pdf: eigenfunctions.gpi eigenfunctions.txt 
+	pyxplot $<
 
 rmax_convergence.pdf: rmax_convergence.gpi rmax_convergence.txt 
 	pyxplot $<
@@ -7,11 +9,11 @@ rmax_convergence.pdf: rmax_convergence.gpi rmax_convergence.txt
 npoints_convergence.pdf: npoints_convergence.gpi npoints_convergence.txt 
 	pyxplot $<	
 
-rmax_convergence.txt npoints_convergence.txt out.txt: main.exe
+eigenfunctions.txt rmax_convergence.txt npoints_convergence.txt out.txt: main.exe
 	mono $<  > $@
 	cat out.txt	
 
-main.exe: main.cs matlib.dll  Amatrix.txt jacobi.dll 
+main.exe: main.cs matlib.dll  jacobi.dll 
 	mcs -target:exe -out:main.exe -reference:matlib.dll,jacobi.dll main.cs
 
 matlib.dll: matrix.cs vector.cs 

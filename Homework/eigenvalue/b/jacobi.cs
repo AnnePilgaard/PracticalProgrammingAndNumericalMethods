@@ -21,7 +21,7 @@ public class jacobi{
 		double apj=A[p,j];
         double aqj=A[q,j];
 		A[p,j]= c*apj + s*aqj;
-		A[q,j]=-s*apj + c*aqj;
+		A[q,j]= -s*apj + c*aqj;
         }   
     }
 

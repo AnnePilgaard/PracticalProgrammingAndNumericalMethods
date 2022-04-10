@@ -1,14 +1,14 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
-# Built for x86_64-pc-cygwin
  
+# Built for x86_64-pc-cygwin
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sat Apr  9 17:20:25 2022
+# Make data base, printed on Sun Apr 10 09:14:24 2022
 
 # Variables
  
@@ -24,7 +24,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Anne\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d75a1ec0-37a4-4a0a-806d-681e9dc441d6-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-da779017-70d2-4cea-a9c9-682cab9571de-sock
 # environment
 VSCODE_CWD = C:\Users\Anne\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -38,7 +38,7 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12836_RMXUVZHUYDAJNCNB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15888_QQQJWTZRVZKCLJPR
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -52,7 +52,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Anne\AppData\Roaming\Code\CachedData\c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1
+VSCODE_CODE_CACHE_PATH = C:\Users\Anne\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
 # environment
 LANG = C
 # default
@@ -86,15 +86,13 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from 'Makefile', line 1)
- 
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 12836
- 
+VSCODE_PID = 15888
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -115,7 +113,6 @@ SHELL := /bin/sh
 HOMEPATH = \Users\Anne
 # default
 MAKECMDGOALS := all
- 
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
@@ -131,6 +128,7 @@ PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdri
 # environment
 COMPUTERNAME = DESKTOP-N4LUK91
 # default
+ 
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
@@ -152,17 +150,16 @@ PROGRAMW6432 = C:\Program Files
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # automatic
 +F = $(notdir $+)
- 
 # environment
- 
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
- 
 # environment
 USERDOMAIN = DESKTOP-N4LUK91
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
 # makefile
 .DEFAULT_GOAL := all
 # default
@@ -196,7 +193,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = /cygdrive/c/Users/Anne/AppData/Local/Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\1d4a0d9fdbff4237c63c26af338103da-1.65.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\1d4a0d9fdbff4237c63c26af338103da-1.66.1-main-sock
 # environment
 TERM = xterm-256color
 # default
@@ -216,7 +213,7 @@ PROCESSOR_REVISION = 3d04
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=12/128=9%
+# Load=99/1024=10%, Rehash=0, Collisions=12/129=9%
 
 # Pattern-specific Variable Values
 
@@ -224,10 +221,11 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 # Directories
 
-# . (device 2882382797, inode 844424931495921): 17 files, no impossibilities.
+# . (device 2882382797, inode 844424931495921): 19 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
+ 
 # Implicit Rules
 
 # No implicit rules.
@@ -236,23 +234,49 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
 
 main.exe: main.cs matlib.dll Amatrix.txt jacobi.dll
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-29 17:52:15.7847467
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-04-09 18:10:34.9765348
 #  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 12):
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.exe
+# automatic
+# * := 
+# automatic
+# < := main.cs
+# automatic
+# + := main.cs matlib.dll Amatrix.txt jacobi.dll
+# automatic
+# % := 
+# automatic
+# ^ := main.cs matlib.dll Amatrix.txt jacobi.dll
+# automatic
+# ? := main.cs
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 15):
 	mcs -target:exe -out:main.exe -reference:matlib.dll,jacobi.dll main.cs
 
 out.txt: main.exe
 #  Implicit rule search has not been done.
- 
-#  Last modified 2022-03-29 17:52:15.9036339
+#  Last modified 2022-04-09 18:10:35.0694589
 #  File has been updated.
-#  Successfully updated.
- 
-#  recipe to execute (from 'Makefile', line 8):
- 
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 11):
 	mono $<  > $@
 	cat out.txt	
+
+rmax_convergence.pdf: rmax_convergence.gpi rmax_convergence.txt
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	pyxplot $<
 
 # Not a target:
 matrix.cs:
@@ -261,37 +285,11 @@ matrix.cs:
 #  File has been updated.
 #  Successfully updated.
 
-fitPlot.pdf: plot.gpi f0.txt f1.txt
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := fitPlot.pdf
-# automatic
-# * := 
-# automatic
-# < := plot.gpi
-# automatic
-# + := plot.gpi f0.txt f1.txt
-# automatic
-# % := 
-# automatic
-# ^ := plot.gpi f0.txt f1.txt
-# automatic
-# ? := plot.gpi f0.txt f1.txt
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 5):
-	pyxplot $<
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-29 17:51:26.1228528
+ 
+#  Last modified 2022-04-09 18:11:10.286413
 #  File has been updated.
 #  Successfully updated.
 
@@ -301,30 +299,21 @@ Amatrix.txt:
 #  Last modified 2022-03-29 13:35:41.3928045
 #  File has been updated.
 #  Successfully updated.
- 
 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
+#  recipe to execute (from 'Makefile', line 24):
 	rm main.exe 
 
-f1.txt: main.exe
+npoints_convergence.txt: main.exe
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-29 17:52:15.9106132
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
 	mono $<  > $@
 	cat out.txt	
-
-# Not a target:
-plot.gpi:
-#  Implicit rule search has been done.
-#  Last modified 2022-03-29 17:53:53.0538782
-#  File has been updated.
-#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -332,8 +321,7 @@ plot.gpi:
 #  Modification time never checked.
 #  File has not been updated.
 
-all: out.txt fitPlot.pdf
- 
+all: out.txt rmax_convergence.pdf npoints_convergence.pdf
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -343,9 +331,37 @@ all: out.txt fitPlot.pdf
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 # Not a target:
+npoints_convergence.gpi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rmax_convergence.gpi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rmax_convergence.txt: main.exe
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	mono $<  > $@
+	cat out.txt	
+
+npoints_convergence.pdf: npoints_convergence.gpi npoints_convergence.txt
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	pyxplot $<	
+
+# Not a target:
 main.cs:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-29 17:52:09.0444475
+ 
+#  Last modified 2022-04-09 18:16:03.9637597
 #  File has been updated.
 #  Successfully updated.
 
@@ -361,7 +377,7 @@ jacobi.dll: jacobi.cs matlib.dll
 #  Last modified 2022-03-29 14:03:17.3355648
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 18):
+#  recipe to execute (from 'Makefile', line 21):
 	mcs -target:library -out:jacobi.dll -reference:matlib.dll jacobi.cs
 
 matlib.dll: matrix.cs vector.cs
@@ -369,7 +385,7 @@ matlib.dll: matrix.cs vector.cs
 #  Last modified 2022-03-29 14:03:16.6019934
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 15):
+#  recipe to execute (from 'Makefile', line 18):
 	mcs -target:library -out:./$@ $^
 
 # Not a target:
@@ -378,37 +394,27 @@ matlib.dll: matrix.cs vector.cs
 #  Modification time never checked.
 #  File has not been updated.
 
-f0.txt: main.exe
-#  Implicit rule search has not been done.
-#  Last modified 2022-03-29 17:52:15.9076128
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 8):
-	mono $<  > $@
-	cat out.txt	
-
 # Not a target:
 jacobi.cs:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-03-29 13:42:42.0540062
 #  File has been updated.
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=18/1024=2%, Rehash=0, Collisions=2/51=4%
+# Load=20/1024=2%, Rehash=0, Collisions=2/56=4%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 197 B / avg = 8 B
-# current buf: size = 8162 B / used = 197 B / count = 23 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 288 B / avg = 12 B
+# current buf: size = 8162 B / used = 288 B / count = 24 / avg = 12 B
 
-# strcache performance: lookups = 58 / hit rate = 60%
+# strcache performance: lookups = 64 / hit rate = 62%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=2/58=3%
-# Finished Make data base on Sat Apr  9 17:20:25 2022
+# Load=24/8192=0%, Rehash=0, Collisions=2/64=3%
+# Finished Make data base on Sun Apr 10 09:14:24 2022
 
  

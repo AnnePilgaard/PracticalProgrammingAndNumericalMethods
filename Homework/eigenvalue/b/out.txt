@@ -22,3 +22,5 @@ Matrix H:
 
 
 Diagonalizing the matrix using the Jacobi eigenvale algorithm:
+Investigating the convergence with respect to rmax, see rmax_convergence.pdf
+Investigating the convergence with respect to npoints, see npoints_convergence.pdf

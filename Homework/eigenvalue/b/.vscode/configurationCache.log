@@ -1,0 +1,1 @@
+{"buildTargets":["all","clean","jacobi.dll","main.exe","matlib.dll","npoints_convergence.pdf","npoints_convergence.txt","out.txt","rmax_convergence.pdf","rmax_convergence.txt"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

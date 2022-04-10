@@ -4,15 +4,17 @@ mcs -target:library -out:./matlib.dll matrix.cs vector.cs
  
 mcs -target:library -out:jacobi.dll -reference:matlib.dll jacobi.cs
 mcs -target:exe -out:main.exe -reference:matlib.dll,jacobi.dll main.cs
- 
 mono main.exe  > out.txt
 cat out.txt	
  
-mono main.exe  > f0.txt
+mono main.exe  > rmax_convergence.txt
 cat out.txt	
  
-mono main.exe  > f1.txt
+pyxplot rmax_convergence.gpi
+ 
+mono main.exe  > npoints_convergence.txt
 cat out.txt	
-pyxplot plot.gpi
+pyxplot npoints_convergence.gpi	
+ 
 make: Leaving directory '/cygdrive/c/Git/PracticalProgrammingAndNumericalMethods/Homework/eigenvalue/b_not_done'
  
