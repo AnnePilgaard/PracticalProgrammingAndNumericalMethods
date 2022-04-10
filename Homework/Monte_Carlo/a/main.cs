@@ -8,6 +8,7 @@ using static System.Math;
 public static class main{
 
     static Random random = new Random();
+    
     static (double,double) plainmc(Func<vector,double> f,vector a,vector b,int N){
         int dim = a.size; 
         double V = 1; 
@@ -35,20 +36,20 @@ public static class main{
 
     static void Main(){
 
-    Func<vector, double> f = delegate(vector v){
-        double x = v[0];
-        double y = v[1];
-        double z = v[2];
-        return 1/(1-Cos(x)*Cos(y)*Cos(z));
-    };
+        Func<vector, double> f = delegate(vector v){
+            double x = v[0];
+            double y = v[1];
+            double z = v[2];
+            return 1/(PI*PI*PI)*1/(1-Cos(x)*Cos(y)*Cos(z));
+        };
 
-    vector start = new vector(0, 0, 0);
-    vector end = new vector(PI, PI, PI);
+        vector start = new vector(0, 0, 0);
+        vector end = new vector(PI, PI, PI);
 
-    int N = 10000;
+        int N = 1000;
 
-    var sol = plainmc(f, start, end, N);
-    WriteLine($"The integral of ∫_0^π  dx/π ∫_ 0^π  dy/π ∫_0^π  dz/π  [1-cos(x)cos(y)cos(z)]-1 :{sol.Item1} with error: {sol.Item2} calculated with {N} steps");
+        var sol = plainmc(f, start, end, N);
+        WriteLine($"The integral of ∫_0^π  dx/π ∫_ 0^π  dy/π ∫_0^π  dz/π  [1-cos(x)cos(y)cos(z)]-1 :{sol.Item1} with error: {sol.Item2} calculated with {N} steps");
 
 
 

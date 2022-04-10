@@ -1,1 +1,1 @@
-The integral of ∫_0^π  dx/π ∫_ 0^π  dy/π ∫_0^π  dz/π  [1-cos(x)cos(y)cos(z)]-1 :44.3092226832387 with error: 2.35344751888912 calculated with 10000 steps
+The integral of ∫_0^π  dx/π ∫_ 0^π  dy/π ∫_0^π  dz/π  [1-cos(x)cos(y)cos(z)]-1 :1.37711744533051 with error: 0.0721607802247431 calculated with 1000 steps
