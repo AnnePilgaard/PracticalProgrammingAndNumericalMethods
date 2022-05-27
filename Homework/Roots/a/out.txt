@@ -1,0 +1,5 @@
+Root finding succesfull after 166 iterations
+The roots of the partial derivatives to the Rosenbrock's valley function are
+1.00001072895437, 1.00002117477306
+The values of the function at this point is
+0.000134759442460108, -5.66501590526514E-05
