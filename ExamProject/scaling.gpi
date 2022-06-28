@@ -1,0 +1,9 @@
+set terminal pdf 
+set output "scaling.pdf" 
+set size 10
+set xlabel "Size of matrix" 
+set ylabel "Average computational time [ms]" 
+set tics out 
+set title "Scaling" 
+plot [] []\
+ "scaling.txt" with LinesPoints title " "

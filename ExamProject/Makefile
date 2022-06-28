@@ -1,4 +1,9 @@
-out.txt: main.exe
+all: main.exe scaling.pdf out.txt
+
+scaling.pdf: scaling.gpi scaling.txt 
+	pyxplot $<
+
+out.txt scaling.txt: main.exe
 	mono $<  > $@
 	cat out.txt	
 

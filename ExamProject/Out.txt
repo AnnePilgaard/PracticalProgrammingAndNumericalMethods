@@ -1,7 +1,10 @@
-Small input test matrix is
+This is project 22 about Variational method with Lagrange multipliers
+We start with a small input test matrix:
 
          1          4          1 
          4          1          4 
          1          4          1 
 The lowest eigenvalue should be 7.179 with the normalized eigenvector (0.522, 0.674, 0.522)
 The lowest calucalted eigenvalue is 7.17882224156012 with the eigenvector (0.521581577418057, 0.67530580541671, 0.521581577418057) 
+
+Now we investigate the scaling of the method

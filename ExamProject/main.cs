@@ -82,7 +82,7 @@ public static class main{
     }
 
     static double getAverageTime(int size){
-        int numberOfIterations = 100;
+        int numberOfIterations = 50;
         int[] timeArray = new int[numberOfIterations];
         int numberOfSuccesfull = 0;
 
@@ -111,10 +111,11 @@ public static class main{
 
     static void Main(){
 
+        WriteLine("This is project 22 about Variational method with Lagrange multipliers");
 
         //Do simple test with a small easy matrix
         matrix simpleA = readMatrixFromFile("simpleA.txt");
-        WriteLine($"Small input test matrix is");
+        WriteLine($"We start with a small input test matrix:");
         simpleA.print();
         WriteLine("The lowest eigenvalue should be 7.179 with the normalized eigenvector (0.522, 0.674, 0.522)");
         
@@ -127,11 +128,11 @@ public static class main{
 
         WriteLine($"The lowest calucalted eigenvalue is {lambda} with the eigenvector ({v[0]}, {v[1]}, {v[2]}) ");
         
-
-
-
         //Investigate the scaling
+        WriteLine("");
+        WriteLine("Now we investigate the scaling of the method");
         
+        /**
         int[] Narray = new int[16];
         double[] timeArray = new double[16];
         int N = 20;
@@ -141,6 +142,26 @@ public static class main{
             timeArray[i] = getAverageTime(N);
             N=+5;
 
+        }
+        **/
+
+        try
+        {
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter("scaling.txt");
+            //Write text
+            int N = 25;
+
+            for(int i = 0; i < 7; i++){
+                sw.WriteLine($"{N} {getAverageTime(N)}");
+                N+=25;
+            }
+            //Close the file
+            sw.Close();
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
         }
 
 
